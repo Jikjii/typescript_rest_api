@@ -9,7 +9,7 @@ export interface UserDocument extends mongoose.Document {
   password: string;
   createdAt: Date;
   updatedAt: Date;
-  comparePassword(candidatePassword: string): Promise<boolean>
+  comparePassword(candidatePassword: string): Promise<boolean>;
 }
 
 // Schema definition
@@ -49,6 +49,6 @@ userSchema.methods.comparePassword = async function (
 };
 
 // Model
-const UserModel = mongoose.model("User", userSchema);
+const UserModel = mongoose.model<UserDocument>("User", userSchema);
 
 export default UserModel;
