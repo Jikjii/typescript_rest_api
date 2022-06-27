@@ -4,7 +4,7 @@ dbUri:
 "mongodb+srv://jikjii:jikjii@cluster0.w5xqycr.mongodb.net/?retryWrites=true&w=majority",
 saltWorkFactor: 10,
 accessTokenTtl: "15m",
-refreshToken: "1y",
+refreshTokenTtl: "1y",
 publicKey: `-----BEGIN PUBLIC KEY-----
 MIGeMA0GCSqGSIb3DQEBAQUAA4GMADCBiAKBgFL3SaL5lp1jb+DXtFN8mdWVAutH
 2iXzBh0O3Tk5ECOEiChLEVWaVh7/thZamWoB/cyRiLyzl+khshJnW7GRg4V68eM5
